@@ -163,7 +163,18 @@ p.contact_p
       border: 2px solid black;
       color : black;
     }
-    
+ 
+#ABOUT
+{
+   margin-left:25%;
+} 
+
+h2.about-heading
+{
+    margin-top:5%;
+    margin-right:30%;
+}
+
 .portfolio-heading
  {
    margin-top: 3%;
@@ -202,6 +213,7 @@ p.contact_p
 
 .intro-bg
 {
+  margin-top:5%;
   color:#FFFFFF;
   background: #FFFFFF;
   background-image: url("../img/intro_bg.jpg");
@@ -225,6 +237,78 @@ p.contact_p
   background-size: cover; 
 
 }
+
+
+.about-box 
+{
+    position: relative;
+    display: block;
+    max-width: 650px;
+    /* margin: 0 auto;  */
+    margin : 10%;
+    
+    
+}
+    .about-box .about-box-caption 
+    {
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      opacity: 0;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.9);
+      font-family: 'Noto Sans', sans-serif;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      transition: all 0.2s; 
+    }
+
+      .about-box .about-box-caption .about-box-caption-content 
+      {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+        text-align: center; 
+      }
+        .about-box .about-box-caption .about-box-caption-content .project-category,
+        .about-box .about-box-caption .about-box-caption-content .project-name 
+        {
+          padding: 0 15px;
+          font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; 
+        }
+        .about-box .about-box-caption .about-box-caption-content .project-category 
+        {
+          font-size: 14px;
+          font-weight: 600;
+          text-transform: uppercase; 
+        }
+        .about-box .about-box-caption .about-box-caption-content .project-name 
+        {
+          font-size: 18px; 
+        }
+    .about-box:hover .about-box-caption 
+    {
+      opacity: 1; 
+    }
+    .about-box:focus 
+    {
+      outline: none; 
+    }
+    @media (min-width: 768px) 
+    {
+      .about-box .about-box-caption .about-box-caption-content .project-category 
+      {
+        font-size: 16px; 
+      }
+      .about-box .about-box-caption .about-box-caption-content .project-name 
+      {
+        font-size: 22px; 
+      } 
+    }
 
 
        
